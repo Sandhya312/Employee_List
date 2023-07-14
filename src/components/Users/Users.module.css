@@ -1,0 +1,97 @@
+.UsersContainer {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  margin-top: 5em;
+}
+
+.UsersContainer .user {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 5%;
+  align-items: center;
+  position: relative;
+}
+
+.UsersContainer .user .userId {
+  position: absolute;
+  top: 0em;
+  right: 6em;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UsersContainer .user .card {
+  padding: 5%;
+  border: 2px solid #f0f0f0;
+  outline: none;
+  border-radius: 100% 0% /35% 0%;
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.UsersContainer .user .card img {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  height: 20rem;
+  width: 20rem;
+  margin: 2%;
+}
+
+.notFound {
+  height: 33rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound h3 {
+  font-size: 5rem;
+  text-decoration: line-through;
+}
+
+.btnContainer {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnContainer button {
+  margin: 2em;
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 550px) {
+  .UsersContainer .user .userId {
+    right: 7em;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .UsersContainer .user .userId {
+    right: 0em;
+  }
+}
+
+
+  
